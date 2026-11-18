@@ -23,10 +23,10 @@ Make exactly one commit that holds all pending changes, with a one-line message.
 5. Write one line that says what changed, in the imperative mood and under 72 characters. Examples:
    - `Add duplicate-check thresholds and reference seeding`
    - `Fix 422 error shape for nested validation errors`
-6. Commit with that line as the subject and the attribution trailer below as the second paragraph:
+6. Commit with that line as the subject only. Do not add a `Co-Authored-By` trailer or any other attribution line:
 
    ```
-   git commit -m "<subject line>" -m "Co-Authored-By: Claude Haiku 5.5 <noreply@anthropic.com>"
+   git commit -m "<subject line>"
    ```
 
 7. Run `git log -1 --stat` and show the user the commit hash, subject and file count.
